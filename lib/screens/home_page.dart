@@ -39,11 +39,16 @@ class _HomePageState extends State<HomePage> {
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (_) => const NotificationsPage()),
+                        MaterialPageRoute(
+                          builder: (_) => const NotificationsPage(),
+                        ),
                       );
                     },
-                    child: const Icon(Icons.notifications_none,
-                        size: 28, color: AppColors.textDark),
+                    child: const Icon(
+                      Icons.notifications_none,
+                      size: 28,
+                      color: AppColors.textDark,
+                    ),
                   ),
                 ],
               ),
@@ -53,7 +58,7 @@ class _HomePageState extends State<HomePage> {
               // ===== Greeting =====
               RichText(
                 text: TextSpan(
-                  text: 'Hello, ',
+                  text: 'FoodSaver, ',
                   style: GoogleFonts.poppins(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
@@ -84,11 +89,18 @@ class _HomePageState extends State<HomePage> {
                   decoration: InputDecoration(
                     hintText: 'Search food, restaurant...',
                     hintStyle: GoogleFonts.poppins(
-                        color: AppColors.textGrey, fontSize: 14),
-                    prefixIcon: const Icon(Icons.search, color: AppColors.textDark),
+                      color: AppColors.textGrey,
+                      fontSize: 14,
+                    ),
+                    prefixIcon: const Icon(
+                      Icons.search,
+                      color: AppColors.textDark,
+                    ),
                     border: InputBorder.none,
-                    contentPadding:
-                        const EdgeInsets.symmetric(vertical: 16, horizontal: 12),
+                    contentPadding: const EdgeInsets.symmetric(
+                      vertical: 16,
+                      horizontal: 12,
+                    ),
                   ),
                 ),
               ),
@@ -198,13 +210,19 @@ class _HomePageState extends State<HomePage> {
           if (index == 0) return;
           if (index == 1) {
             Navigator.push(
-                context, MaterialPageRoute(builder: (_) => const DonateFoodPage()));
+              context,
+              MaterialPageRoute(builder: (_) => const DonateFoodPage()),
+            );
           } else if (index == 2) {
             Navigator.push(
-                context, MaterialPageRoute(builder: (_) => const ReceivePage()));
+              context,
+              MaterialPageRoute(builder: (_) => const ReceivePage()),
+            );
           } else if (index == 3) {
             Navigator.push(
-                context, MaterialPageRoute(builder: (_) => const ProfilePage()));
+              context,
+              MaterialPageRoute(builder: (_) => const ProfilePage()),
+            );
           }
         },
       ),
@@ -313,7 +331,9 @@ class _NearbyCard extends StatelessWidget {
                     Text(
                       distance,
                       style: GoogleFonts.poppins(
-                          fontSize: 12, color: AppColors.textGrey),
+                        fontSize: 12,
+                        color: AppColors.textGrey,
+                      ),
                     ),
                     const SizedBox(height: 6),
                     Text(
@@ -331,7 +351,9 @@ class _NearbyCard extends StatelessWidget {
                         Text(
                           qty,
                           style: GoogleFonts.poppins(
-                              fontSize: 12, color: AppColors.textDark),
+                            fontSize: 12,
+                            color: AppColors.textDark,
+                          ),
                         ),
                         Text(
                           time,
