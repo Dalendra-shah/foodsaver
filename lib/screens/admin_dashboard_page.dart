@@ -20,7 +20,7 @@ class AdminDashboardPage extends StatelessWidget {
         elevation: 0,
         leading: const Icon(Icons.menu, color: AppColors.textDark),
         title: Text(
-          'Admin Dashboard',
+          'Admin Panel',
           style: GoogleFonts.poppins(
             fontSize: 18,
             fontWeight: FontWeight.bold,
@@ -49,19 +49,24 @@ class AdminDashboardPage extends StatelessWidget {
             Row(
               children: const [
                 Expanded(
-                    child: _StatCard(value: '320', label: 'Total Donations')),
+                  child: _StatCard(value: '320', label: 'Total Donations'),
+                ),
                 SizedBox(width: 12),
                 Expanded(
-                    child: _StatCard(value: '245', label: 'People Helped')),
+                  child: _StatCard(value: '245', label: 'People Helped'),
+                ),
               ],
             ),
             const SizedBox(height: 12),
             Row(
               children: const [
                 Expanded(
-                    child: _StatCard(value: '620 kg', label: 'Food Saved')),
+                  child: _StatCard(value: '620 kg', label: 'Food Saved'),
+                ),
                 SizedBox(width: 12),
-                Expanded(child: _StatCard(value: '85', label: 'Active Users')),
+                Expanded(
+                  child: _StatCard(value: '85', label: 'Active Users'),
+                ),
               ],
             ),
             const SizedBox(height: 24),
@@ -81,7 +86,8 @@ class AdminDashboardPage extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (_) => const AdminDonationsPage()),
+                        builder: (_) => const AdminDonationsPage(),
+                      ),
                     );
                   },
                   child: Text(
