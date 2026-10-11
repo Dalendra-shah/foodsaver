@@ -58,7 +58,7 @@ class _HomePageState extends State<HomePage> {
               // ===== Greeting =====
               RichText(
                 text: TextSpan(
-                  text: 'FoodSaver, ',
+                  text: 'FoodSaver User, ',
                   style: GoogleFonts.poppins(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
